@@ -5,6 +5,13 @@ body {
     background-repeat: no-repeat;
 }
 
+#logo {
+    width: 120px;
+}
+
+#mockups {
+    width: 296px;
+}
 
 .attribution { 
     font-size: 11px; 
