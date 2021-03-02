@@ -7,14 +7,14 @@ body {
     text-align: center;
   }
   
-  h1 {
+h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
   }
   
-  .container {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -24,22 +24,22 @@ body {
     width: 100vw;
   }
   
-  #logo {
+#logo {
     width: 120px;
     align-self: flex-start;
   }
   
-  #mockups {
+#mockups {
     height: 209px;
   }
   
-  .info {
+.info {
     line-height: 24px;
     font-size: 16px;
     margin-bottom: 24px;
   }
   
-  .btn {
+.btn {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -50,21 +50,21 @@ body {
     box-shadow: 0 2px 4px #311D7B;
   }
   
-  #bootstrap-override:active, #bootstrap-override:hover {
+#bootstrap-override:active, #bootstrap-override:hover, #bootstrap-override:focus {
     background-color: #E880E8;
     color: #fff;
     border: none;
-  
+    outline: none;
   }
   
-  .social-media {
+.social-media {
     height: 28px;
     width: 103.5px;
     display: flex;
     justify-content: space-between;
   }
   
-  .fab {
+.fab {
     border-radius: 50%;
     border: 1px solid white;
     width: 28px;
@@ -74,7 +74,7 @@ body {
     align-items: center;
   }
   
-  .fab:active {
+.fab:active, .fab:hover {
     border-color: #FF52C1;
     color: #FF52C1;
   }
@@ -85,5 +85,55 @@ body {
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: #fff; 
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: 1440px auto;
+    text-align: left;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 696px 520px;
+    grid-template-rows: 1fr 32px 215px 246px 1fr 13px;
+    grid-column-gap: 59px;
+    height: 100vh;
+    width: 100vw;
+  }
+  #logo {
+    width: 200px;
+    grid-area: 1/2/2/1;
+    padding-top: 64px;
+  }
+  #mockups {
+    height: 493px;
+    grid-area: 2/2/5/1;
+  }
+  .h-info-b {
+    grid-area: 3/3/5/2;
+    align-self: start;
+  }
+  .info {
+    line-height: 27px;
+    font-size: 1.125em;
+  }
+  .social-media {
+    grid-area: 5/3/6/2;
+    height: 28px;
+    width: 103.5px;
+    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+  }
+  .attribution { 
+    grid-area: 6/3/7/1;
+    text-align: center; 
+}
 }
