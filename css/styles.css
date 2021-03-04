@@ -124,6 +124,9 @@ h1 {
     line-height: 27px;
     font-size: 1.125em;
   }
+  .btn {
+    font-size: 18px;
+  }
   .social-media {
     grid-area: 5/3/6/2;
     height: 28px;
